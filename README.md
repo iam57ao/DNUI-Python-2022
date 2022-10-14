@@ -10,7 +10,5 @@
 
 ## 联系方式
 
-QQ：2692772019
-
-E-Mail：me@iam57.com
+**[QQ](https://qm.qq.com/cgi-bin/qm/qr?k=bFiA1FEjTyqfBtaq8pHmcjpMfNre5YJM&noverify=0&personal_qrcode_source=3)|[Twitter](https://twitter.com/WuQiNB)|[BiliBili](https://space.bilibili.com/43894789)|[Email](mailto:me@iam57.com)**
 
