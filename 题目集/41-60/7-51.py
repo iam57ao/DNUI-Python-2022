@@ -1,0 +1,5 @@
+ls = eval(input())
+s, i = input(), int(input())
+ls.insert(i, s)
+ls.append(s)
+print(ls)

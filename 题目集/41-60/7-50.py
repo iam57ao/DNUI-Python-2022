@@ -1,0 +1,5 @@
+s = list(input())
+s1, i = input(), int(input())
+s.insert(i, s1)
+s.append(s1)
+print(s)
