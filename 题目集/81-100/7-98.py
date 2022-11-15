@@ -1,23 +1,11 @@
-import math
-
-
-def factorial(num):
-    if num == 0:
-        return 1
-    for element in range(1, num):
-        num *= element
-    return num
-
-
-a = eval(input())
-i = 1
+numerator = 1
+denominator = 1
 count = 1
-count_2 = 1
-while True:
-    if factorial(i) / count_2 <= a:
-        break
-    count_2 *= 2 * i + 1
-    count += factorial(i) / count_2
-    i += 1
-print(round(count * 2, 5))
-
+sum_value = 1
+eps = float(input())
+while numerator / denominator > eps:
+    numerator *= count
+    denominator *= 2 * count + 1
+    sum_value += numerator / denominator
+    count += 1
+print(f"PI = {sum_value * 2:.5f}")
