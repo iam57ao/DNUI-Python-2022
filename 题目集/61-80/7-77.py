@@ -1,22 +1,10 @@
-a = input()
-out = str()
-for i in a:
-    if i.isalpha and i.islower():
-        i = ord(i)
-        if i < 110:
-            i += 2 * (110 - i) - 1
-            out += chr(i)
-        else:
-            i -= 2 * (i - 109) - 1
-            out += chr(i)
-    elif i.isalpha and i.isupper():
-        i = ord(i)
-        if i < 78:
-            i += 2 * (78 - i) - 1
-            out += chr(i)
-        else:
-            i -= 2 * (i - 77) - 1
-            out += chr(i)
+str_input = input()
+str_output = ""
+for element in str_input:
+    if element.islower():
+        str_output += chr(122 - ord(element) + 97)
+    elif element.isupper():
+        str_output += chr(90 - ord(element) + 65)
     else:
-        out += i
-print(out)
+        str_output += element
+print(str_output)

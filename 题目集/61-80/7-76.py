@@ -1,18 +1,16 @@
-num_list = [2]
-for num in range(3, 5000):
-    for i in range(2, int(num ** 0.5) + 1):
-        if num % i == 0:
-            break
+def isprime(x):
+    if x != 1:
+        for i in range(2, int(x ** 0.5) + 1):
+            if x % i == 0:
+                return False
+        else:
+            return True
     else:
-        num_list.append(num)
+        return False
 
-state = False
+
 num = int(input())
-for i in num_list:
-    if state:
+for j in range(2, num):
+    if isprime(j) and isprime(num - j):
+        print(f"{num} = {j} + {num - j}")
         break
-    for j in num_list:
-        if i + j == num:
-            print(f"{num} = {i} + {j}")
-            state = True
-            break
