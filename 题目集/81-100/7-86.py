@@ -1,6 +1,4 @@
-num = int(input())
-for i in range(1, num + 1):
-    for j in range(1, i + 1):
-        print(j, end="")
+for line in range(1, int(input()) + 1):
+    for count in range(line):
+        print(count + 1, end='')
     print()
-    

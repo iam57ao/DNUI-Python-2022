@@ -1,10 +1,9 @@
 num_list = []
 for num in range(2, int(input())):
-    divisible_num = []
-    for i in range(1, num):
+    sum_list = []
+    for i in range(1, num // 2 + 1):
         if num % i == 0:
-            divisible_num.append(i)
-    if sum(divisible_num) == num:
+            sum_list.append(i)
+    if sum(sum_list) == num:
         num_list.append(num)
-num_list = map(str, num_list)
-print(",".join(num_list))
+print(*num_list, sep=",")
