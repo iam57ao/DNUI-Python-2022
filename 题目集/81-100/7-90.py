@@ -13,8 +13,8 @@ for num in range(m, n + 1):
             break
     else:
         if sum(divisible_list) == num:
-            ls.append(f"{num} = {' + '.join(list(map(str, sorted(divisible_list))))}")
+            output.append(f"{num} = {' + '.join(list(map(str, sorted(divisible_list))))}")
 if output:
-    print(*ls, sep='\n')
+    print(*output, sep='\n')
 else:
     print("None")
