@@ -14,7 +14,4 @@ for num in range(m, n + 1):
     else:
         if sum(divisible_list) == num:
             output.append(f"{num} = {' + '.join(list(map(str, sorted(divisible_list))))}")
-if output:
-    print(*output, sep='\n')
-else:
-    print("None")
+print(*output, sep='\n') if output else print("None")
