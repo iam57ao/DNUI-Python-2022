@@ -1,6 +1,6 @@
 <div align=center>
 
-# DNUI-PTA
+# DNUI-Python-2022
 
 [![images](https://img.shields.io/badge/BiliBili-%E4%BA%94%E4%B8%83%E5%97%B7-ff69b4?style=flat-square)](https://space.bilibili.com/43894789) [![images](https://img.shields.io/badge/Twitter-%E4%BA%94%E4%B8%83%E5%97%B7-blue?style=flat-square)](https://twitter.com/WuQiNB) [![images](https://img.shields.io/badge/QQ-2692772019-informational?style=flat-square&link=https://qm.qq.com/cgi-bin/qm/qr?k=bFiA1FEjTyqfBtaq8pHmcjpMfNre5YJM&noverify=0&personal_qrcode_source=3)](https://qm.qq.com/cgi-bin/qm/qr?k=bFiA1FEjTyqfBtaq8pHmcjpMfNre5YJM&noverify=0&personal_qrcode_source=3) [![images](https://img.shields.io/badge/Email-me%40iam57.com-orange?style=flat-square)](mailto:me@iam57.com)
 
