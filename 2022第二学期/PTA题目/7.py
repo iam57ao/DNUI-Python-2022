@@ -23,25 +23,28 @@ class Stack:
 
 
 def is_perfect(text):
+    level = "<([{>)]}"
     stack = Stack()
     for i in text:
-        if i == "(":
-            stack.push(i)
+        if i in "<([{":
+            if stack.is_empty() or level.index(i) <= level.index(stack.peek()):
+                stack.push(i)
+            else:
+                return "NO"
         else:
             if stack.is_empty():
                 return "NO"
-            else:
-                temp = stack.pop()
-                if temp == "(":
-                    continue
-                return "NO"
+            temp = stack.pop()
+            if level.index(i) - level.index(temp) == 4:
+                continue
+            return "NO"
     if stack.is_empty():
         return "YES"
     return "NO"
 
 
 if __name__ == '__main__':
-    from sys import stdin
 
-    for j in stdin.read().split():
-        print(is_perfect(j))
+    for j in range(int(input())):
+        user_input = input()
+        print(is_perfect(user_input))
