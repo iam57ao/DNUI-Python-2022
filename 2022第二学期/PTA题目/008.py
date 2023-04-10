@@ -32,7 +32,5 @@ def is_palindrome(text):
     return False
 
 
-
-
 if __name__ == '__main__':
     print(f"{user_input}是回文。" if is_palindrome(user_input := input()) else f"{user_input}不是回文。")

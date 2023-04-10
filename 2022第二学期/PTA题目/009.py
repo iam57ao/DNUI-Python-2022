@@ -9,11 +9,13 @@ class Stack:
     def push(self, element):
         self.data.append(element)
         self.length += 1
+
     def pop(self):
         if self.is_empty():
             return None
         self.length -= 1
         return self.data.pop()
+
 
 def calculate(text):
     stack = Stack()
@@ -34,7 +36,6 @@ def calculate(text):
         print(stack.pop())
     else:
         print("Expression Error!")
-
 
 
 if __name__ == '__main__':

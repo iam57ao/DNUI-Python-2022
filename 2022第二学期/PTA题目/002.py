@@ -16,20 +16,23 @@ for i in range(int(input())):
             if lst1[lst1_index] == 0:
                 lst1_index += 2
                 continue
-            out.append(f"{f'+{lst1[lst1_index]}' if lst1[lst1_index] > 0 else f'{lst1[lst1_index]}'}x^{lst1[lst1_index + 1]}")
+            out.append(
+                f"{f'+{lst1[lst1_index]}' if lst1[lst1_index] > 0 else f'{lst1[lst1_index]}'}x^{lst1[lst1_index + 1]}")
             lst1_index += 2
         elif lst1[lst1_index + 1] > lst2[lst2_index + 1]:
             if lst2[lst2_index] == 0:
                 lst2_index += 2
                 continue
-            out.append(f"{f'+{lst2[lst2_index]}' if lst2[lst2_index] > 0 else f'{lst2[lst2_index]}'}x^{lst2[lst2_index + 1]}")
+            out.append(
+                f"{f'+{lst2[lst2_index]}' if lst2[lst2_index] > 0 else f'{lst2[lst2_index]}'}x^{lst2[lst2_index + 1]}")
             lst2_index += 2
         else:
             if lst1[lst1_index] + lst2[lst2_index] == 0:
                 lst1_index += 2
                 lst2_index += 2
                 continue
-            out.append(f"{f'+{lst1[lst1_index] + lst2[lst2_index]}' if lst1[lst1_index] + lst2[lst2_index] > 0 else f'{lst1[lst1_index] + lst2[lst2_index]}'}x^{lst1[lst1_index + 1]}")
+            out.append(
+                f"{f'+{lst1[lst1_index] + lst2[lst2_index]}' if lst1[lst1_index] + lst2[lst2_index] > 0 else f'{lst1[lst1_index] + lst2[lst2_index]}'}x^{lst1[lst1_index + 1]}")
             lst1_index += 2
             lst2_index += 2
     odd_lst = (lst1 := lst1[lst1_index:]) if lst1_index < lst2_index else (lst2 := lst2[lst2_index:])

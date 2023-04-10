@@ -35,5 +35,5 @@ def is_perfect(text):
 
 
 if __name__ == '__main__':
-   for j in range(int(input())):
-       print("Yes" if is_perfect(input()) else "No")
+    for j in range(int(input())):
+        print("Yes" if is_perfect(input()) else "No")
